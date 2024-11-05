@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:34:58 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/03 15:33:20 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/05 19:01:28 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,45 +14,58 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	*ft_itoa(int n)
+static int	calc_len(int n)
 {
-	char	*ptr;
-	char	*tmp;
-	int	reminder;
-	int	i;
-	int size;
-	int j;
+	int	count;
 
-	i = 0;
+	count = 0;
+	if (n <= 0)
+		count = 1;
 	while (n != 0)
 	{
-		tmp[i] = n % 10 + 48;
 		n = n / 10;
-		i++;
+		count++;
 	}
-	size = ft_strlen(tmp);
-	ptr = (char *)malloc(size * sizeof(char) + 1);
-	if (!ptr)
+	return (count);
+}
+
+char	*ft_itoa(int n)
+{
+	char			*ptr;
+	int				len;
+	unsigned int	nbr;
+
+	len = calc_len(n);
+	ptr = (char *)malloc((len + 1) * sizeof(char));
+	if (ptr == NULL)
 		return (NULL);
-	i = 0;
-	j = size - 1;
-	while (j >= 0)
+	ptr[len] = '\0';
+	if (n == 0)
+		ptr[0] = '0';
+	if (n < 0)
 	{
-		ptr[i] = tmp[j];
-		i++;
-		j--;
+		ptr[0] = '-';
+		nbr = (unsigned int)n * (-1);
 	}
-	ptr[i] = '\0';
+	else
+		nbr = (unsigned int)n;
+	while (nbr > 0)
+	{
+		ptr[len - 1] = nbr % 10 + 48;
+		nbr = nbr / 10;
+		len--;
+	}
 	return (ptr);
 }
-// ghalat????? a revoir
+
+/*
 int main()
 {
 	char *tst;
 
-	tst = ft_itoa("150");
+	tst = ft_itoa(-2147483648);
 	if (tst == NULL)
 		printf("alloc failed");
 	else
 		printf("%s", tst);
-}
+}*/
