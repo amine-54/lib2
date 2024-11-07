@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:17:00 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/29 10:44:34 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:40:07 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	ptr = malloc(count * size);
