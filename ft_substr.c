@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:10:34 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/29 12:41:44 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:14:07 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[j] = '\0';
 	return (ptr);
 }
-
+/*
 int main()
 {
 	char *result;
@@ -49,5 +49,5 @@ int main()
 		printf("%s", result);
 	free(result);
 }
-
+*/
 //??? a revoir

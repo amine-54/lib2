@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 18:58:08 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/30 18:34:54 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/07 16:13:19 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memset(void *s, int c, size_t n)
     }
     return (s);
 }
-
+/*
 int main()
 {
     char array[20];
@@ -43,4 +43,4 @@ int main()
         i++;
     }
 }
-
+*/
