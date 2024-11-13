@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:02:09 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/29 10:04:18 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/13 13:23:52 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
 /* ft_memchr work on raw memory. it do not assume that the memory block is a null-terminated string. Therefore, it will not stop when encountering a null character ('\0').
 The condition while (i < n) effectively ensures that you stay within the bounds of the specified memory block and checks only the bytes you're supposed to. If you wanted 
 to implement logic for null-terminated strings specifically, you would need a different function (like strlen or a string comparison function) rather than a memory search 

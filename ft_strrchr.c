@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:20:28 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/29 10:22:22 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/13 11:51:55 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)s + i - 1);
 		i--;
 	}
-	printf("%zu", i);
 	if ((char)c == '\0')
 		return ((char *)s + ft_strlen(s));
 	return (NULL);
