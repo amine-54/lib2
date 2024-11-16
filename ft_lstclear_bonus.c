@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 15:28:29 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/10 17:00:41 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:11:51 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list *current;
 
-	if (lst == NULL || lst == NULL)
+	if (lst == NULL)
 		return ;
 
 	while (*lst != NULL)

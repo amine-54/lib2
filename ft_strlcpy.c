@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:48:09 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/12 13:00:04 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:09:00 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
-
-/*int main()
-{
-    char tst[10];
-
-    ft_strlcpy(tst, "amine", 4);
-    printf("%zu\n", ft_strlcpy(tst, "amine", 4));
-    printf("%s", tst);
-}*/

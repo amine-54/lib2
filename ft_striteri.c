@@ -6,11 +6,12 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:03:23 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/06 16:03:01 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 17:03:43 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include "libft.h"
 
 /*void	tst(unsigned int index, char *s)
 {

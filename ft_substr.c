@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 11:10:34 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/14 15:08:59 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:55:14 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (NULL);
 	str_len = ft_strlen(s);
-	if (start >= str_len || start == 0)
+	if (start >= str_len || len == 0)
 		return (ft_strdup(""));
 	if (len > str_len - start)
 		len = str_len - start;
@@ -38,10 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-int main()
-{
-	char	*ptr;
-	ptr = ft_substr("tst1337", 3, 4);
-	printf("%s", ptr);
-}*/

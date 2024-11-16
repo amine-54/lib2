@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 09:38:01 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/14 17:45:42 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:57:59 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end_index;
 	size_t	size;
 
-	start_index = 0;
 	if (!s1 || !set)
 		return (NULL);
+	start_index = 0;
 	if (s1[start_index] == '\0')
 		return (ft_strdup(""));
 	while (s1[start_index] && found_in_set(s1[start_index], set) == 1)
@@ -54,15 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(ptr, s1 + start_index, size + 1);
 	return (ptr);
 }
-
-/*int main()
-{
-	char	*tst;
-
-	tst = ft_strtrim("amine1337", "amine");
-	if (tst == NULL)
-		printf("alloc failed");
-	else
-		printf("%s", tst);
-	free(tst);
-}*/

@@ -6,9 +6,11 @@
 /*   By: mmanyani <mmanyani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 16:28:28 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/13 19:01:07 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:50:24 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

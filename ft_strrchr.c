@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:20:28 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/13 11:51:55 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:18:31 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + ft_strlen(s));
 	return (NULL);
 }
-/*
-int main()
-{
-    char *result;
-
-    result =  ft_strrchr("amiae", 'a');
-
-    if (result != NULL)
-        printf("%c", *result);
-    else
-        printf("NOT FOUND");
-}*/

@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:42:34 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/14 15:40:06 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:56:08 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-int main()
-{
-	char *tst;
-
-	tst = ft_strjoin("amine", "1337");
-	if (tst == NULL)
-		printf("alloc failed");
-	else
-		printf("%s", tst);
-	free(tst);
-}*/

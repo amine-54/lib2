@@ -6,41 +6,24 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 18:58:08 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/07 16:13:19 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:04:58 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-    size_t i;
+	size_t			i;
+	unsigned char	*tmp;
 
-    unsigned char *p;
-
-    p = (unsigned char *)s;
-    i = 0;
-
-    /*if (s == NULL)
-        return (NULL);        ??*/ 
-    while (i < n)
-    {
-        p[i] = (unsigned char)c;
-        i++;
-    }
-    return (s);
+	tmp = (unsigned char *)b;
+	i = 0;
+	while (i < len)
+	{
+		tmp[i] = (unsigned char)c;
+		i++;
+	}
+	return (b);
 }
-/*
-int main()
-{
-    char array[20];
-    ft_memset(array, 'a', 20);
-    int i = 0;
-    while (i < 20)
-    {
-        printf("%d", array[i]);
-        i++;
-    }
-}
-*/

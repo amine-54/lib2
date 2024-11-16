@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 12:06:15 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/10 13:01:21 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 15:38:37 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,16 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*current;
 
-	if (lst == NULL)
+	if (lst == NULL || new == NULL)
 		return ;
 	if (*lst == NULL)
 	{
 		*lst = new;
-		new->next = NULL;
+		//new->next = NULL;
 		return ;
 	}
 	current = ft_lstlast(*lst);
 	current->next = new;
-	new->next = NULL;
 }
 /*
 int main()

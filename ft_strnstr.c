@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:12:20 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/13 17:19:08 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:47:41 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,25 +24,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	while (haystack[i] && i < len)
 	{
 		j = 0;
-			while(haystack[i + j] == needle[j] && i + j < len)
-			{
-				j++;
-				if (needle[j] == '\0')
-					return ((char *)&haystack[i]);
-			}
+		while (haystack[i + j] == needle[j] && i + j < len)
+		{
+			j++;
+			if (needle[j] == '\0')
+				return ((char *)&haystack[i]);
+		}
 		i++;
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-    char *result;
-
-    result = ft_strnstr("amine", "min", 4);
-    if (result == NULL)
-        printf("NO MATCH FOUND");
-    else
-        printf("%s", result);
-}*/
