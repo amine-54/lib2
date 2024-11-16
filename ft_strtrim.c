@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 09:38:01 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/10/30 12:31:22 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:45:42 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start_index = 0;
 	if (!s1 || !set)
 		return (NULL);
+	if (s1[start_index] == '\0')
+		return (ft_strdup(""));
 	while (s1[start_index] && found_in_set(s1[start_index], set) == 1)
 		start_index++;
-	end_index = ft_strlen(s1);
+	if (s1[start_index] == '\0')
+		return (ft_strdup(""));
+	end_index = ft_strlen(s1) - 1;
 	while (end_index > start_index && found_in_set(s1[end_index], set) == 1)
 		end_index--;
-	size = end_index - start_index;
+	size = end_index - start_index + 1;
 	ptr = (char *)malloc(size * sizeof(char) + 1);
 	if (!ptr)
 		return (NULL);

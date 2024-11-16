@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:34:58 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/05 19:01:28 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/15 12:35:27 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,10 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		ptr[0] = '-';
-		nbr = (unsigned int)n * (-1);
+		nbr = -n;
 	}
 	else
-		nbr = (unsigned int)n;
+		nbr = n;
 	while (nbr > 0)
 	{
 		ptr[len - 1] = nbr % 10 + 48;

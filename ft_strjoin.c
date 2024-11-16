@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 12:42:34 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/07 16:00:49 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/14 15:40:06 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,22 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
-	size_t	i;
-	size_t	j;
+	int		i;
+	int		j;
 
-	i = 0;
-	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	ptr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char) + 1);
+	ptr = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
-	while (i < ft_strlen(s1))
+	i = 0;
+	while (s1[i])
 	{
 		ptr[i] = s1[i];
 		i++;
 	}
-	while (j < ft_strlen(s2))
+	j = 0;
+	while (s2[j])
 	{
 		ptr[i] = s2[j];
 		i++;
@@ -41,8 +41,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/* awla f lwhile u can do;
- while (s[i])  o  while (s[j]) blast lwhiles li lfo9. bjoj s7a7
+/*
 int main()
 {
 	char *tst;
@@ -53,5 +52,4 @@ int main()
 	else
 		printf("%s", tst);
 	free(tst);
-}
-*/
+}*/

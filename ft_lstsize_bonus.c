@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/09 18:52:52 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/09 21:16:02 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/15 15:06:51 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-
+/*
 int main()
 {
 	t_list	*node1;
@@ -58,4 +58,4 @@ int main()
 	free(node1);
 	free(node2);
 	free(node3);
-}
+}*/
