@@ -6,12 +6,11 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 11:34:15 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/03 15:31:50 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:17:13 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	count_words(char const *str, char c)
 {
@@ -43,7 +42,7 @@ static char	**free_ptr(char **ptr, int i)
 	return (NULL);
 }
 
-static char	*get_word(const char *str, char c, int *index)
+static char	*extract_word(const char *str, char c, int *index)
 {
 	char	*ptr;
 	int		length;
@@ -83,7 +82,7 @@ char	**ft_split(char const *s, char c)
 	index = 0;
 	while (i < count_words(s, c))
 	{
-		ptr[i] = get_word(s, c, &index);
+		ptr[i] = extract_word(s, c, &index);
 		if (ptr[i] == NULL)
 			return (free_ptr(ptr, i));
 		i++;
@@ -91,17 +90,3 @@ char	**ft_split(char const *s, char c)
 	ptr[i] = NULL;
 	return (ptr);
 }
-/*
-int main()
-{
-	char **tst;
-	int	i;
-
-	i = 0;
-	tst = ft_split("tst,alah,,13,,37", ',');
-	while (tst[i])
-	{
-		printf("%s\n", tst[i]);
-		i++;
-	}
-}*/

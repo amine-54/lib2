@@ -6,11 +6,11 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 09:56:47 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/07 16:19:56 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/17 14:12:02 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

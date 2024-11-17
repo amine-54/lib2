@@ -6,12 +6,10 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 09:38:01 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/16 16:57:59 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/17 16:55:43 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	found_in_set(char const c, char const *set)
@@ -48,7 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end_index > start_index && found_in_set(s1[end_index], set) == 1)
 		end_index--;
 	size = end_index - start_index + 1;
-	ptr = (char *)malloc(size * sizeof(char) + 1);
+	ptr = (char *)malloc((size + 1) * sizeof(char));
 	if (!ptr)
 		return (NULL);
 	ft_strlcpy(ptr, s1 + start_index, size + 1);

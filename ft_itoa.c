@@ -6,12 +6,10 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 13:34:58 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/15 12:35:27 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:18:37 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	calc_len(int n)
