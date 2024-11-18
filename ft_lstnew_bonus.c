@@ -6,12 +6,10 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:24:27 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/09 19:29:49 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/18 10:41:58 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)
@@ -25,13 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-/*
-int main()
-{
-	t_list *tst;
-	int	i;
-
-	i = 15;
-	tst = ft_lstnew(&i);
-	printf("%d", *(int *)(tst->content));
-}*/

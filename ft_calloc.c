@@ -6,7 +6,7 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 17:17:00 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/17 16:07:03 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/18 09:34:58 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			i;
 	size_t			all_size;
 
+	if (count == 0 || size == 0)
+		return (malloc(0));
 	i = 0;
 	if (count != 0 && size > SIZE_MAX / count)
 		return (NULL);
