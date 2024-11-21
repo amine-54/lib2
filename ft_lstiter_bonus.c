@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mmanyani <mmanyani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 14:56:33 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/18 11:15:59 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/20 11:43:47 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*current;
 
-	if (lst == NULL)
+	if (lst == NULL || f == NULL)
 		return ;
 	current = lst;
 	while (current != NULL)

@@ -6,17 +6,12 @@
 /*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 15:03:23 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/16 17:03:43 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:32:46 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-/*void	tst(unsigned int index, char *s)
-{
-	*s = *s + index;
-}*/
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;
@@ -26,16 +21,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (s[i])
 	{
-		//printf("before : %c\n", s[i]); 
 		(*f)(i, &s[i]);
-		//printf("after : %c\n", s[i]);
 		i++;
 	}
 }
-/*
-int main()
-{
-	char ts[6] = "amine";
-
-	ft_striteri(ts, tst);
-}*/

@@ -3,25 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmanyani <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mmanyani <mmanyani@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 12:43:39 by mmanyani          #+#    #+#             */
-/*   Updated: 2024/11/15 14:31:32 by mmanyani         ###   ########.fr       */
+/*   Updated: 2024/11/20 12:07:57 by mmanyani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
-/*static char	fill(unsigned int index, char s)
-{
-	char	c;
-
-	c = s + index;
-	return (c);
-}
-*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*ptr;
@@ -43,14 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-int main()
-{
-	char *tst;
-
-	tst = ft_strmapi(NULL, fill);
-	if (tst == NULL)
-		printf("alloc failed");
-	else
-		printf("%s", tst);
-}*/
