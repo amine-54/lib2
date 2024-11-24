@@ -6,6 +6,7 @@ The **Libft** project is a foundational exercise aimed at deepening your underst
 
 ## Grade
 
+![Grade](grade.jpg)
 
 ## Objective
 
