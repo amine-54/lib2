@@ -68,34 +68,6 @@ The library includes a variety of functions grouped into categories:
 - `ft_lstiter`: Applies a function to each node of a linked list.
 - `ft_lstmap`: Applies a function to each node of a linked list and returns a new list.
 
-## Ressources:
-
-### Pointers:
-
-https://www.youtube.com/watch?v=zuegQmMdy8M&t=8785s
-
-https://www.youtube.com/watch?v=f_uWOWViYc0&t=432s
-
-https://www.youtube.com/watch?v=ewBBRaF0oEA
-
-### Memory:
-
-https://www.geeksforgeeks.org/memory-layout-of-c-program/
-
-### Compilation Process:
-
-https://www.youtube.com/watch?v=VDslRumKvRA
-
-### Linked Lists:
-
-https://youtube.com/playlist?list=PLfqABt5AS4FmXeWuuNDS3XGENJO1VYGxl&si=zkEcD832XygBuN3N
-
-### Makefile:
-
-https://makefiletutorial.com/
-
-https://www.youtube.com/watch?v=GExnnTaBELk
-
 ## Getting Started
 
 To use the **Libft** library in your project:
